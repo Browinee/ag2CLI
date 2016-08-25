@@ -1,0 +1,12 @@
+<p>
+ {{title}} {{numberI}}
+</p>
+
+
+<h1>Property binding</h1>
+<input type="text" [value] = "title">
+<p [ngClass]="{redcolor:onTest()}"> Is this style?</p>
+
+<p [ngStyle]="{color:'green'}"> green test?</p>
+<app-property-binding [result]=10></app-property-binding>
+<app-event-binding (clickable)="onClicked($event)"></app-event-binding>	
